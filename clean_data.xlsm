@@ -1,0 +1,7 @@
+Sub Clearcells()
+'Updateby Extendoffice 20161008
+'Worksheets("raw_data").Range("A3", "A5").Clear
+'Worksheets("raw_data").Range("A:Z").ClearContents
+Worksheets("raw_data").UsedRange.ClearContents
+
+End Sub
