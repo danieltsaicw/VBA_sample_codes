@@ -5,3 +5,9 @@ Sub Clearcells()
 Worksheets("raw_data").UsedRange.ClearContents
 
 End Sub
+
+
+'Turn on Formula Automation
+Application.Calculation = xlAutomatic
+'Turn off Formula Automation - Manual
+Application.Calculation = xlManual
