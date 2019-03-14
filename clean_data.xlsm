@@ -11,3 +11,14 @@ End Sub
 Application.Calculation = xlAutomatic
 'Turn off Formula Automation - Manual
 Application.Calculation = xlManual
+
+
+'Find
+
+Dim RangeFound As Range
+Set RangeFound = Range("A1:A100").Find(What:="String", lookin:=xlValues)
+If Not RangeFound is Nothing Then
+  Range("A101").Value = 100
+Else
+  MsgBox("not found")
+End
