@@ -1,2 +1,2 @@
 'speed up
-Application.ScreenUpdating
+Application.ScreenUpdating = False
