@@ -1,0 +1,17 @@
+
+Sub CopyBloombergData()
+
+  Application.DisplayAlerts = False
+
+  Dim wb1 As Workbook
+  Dim wb2 As Workbook
+
+  Set wb1 = Workbooks.Open("C:\Users\daniel\Desktop\AscenderVBA\output_bloomberg.xlsx")
+  Worksheets("Sheet1").Range("A:B").Copy
+
+  Set wb2 = Workbooks.Open("C:\Users\daniel\Desktop\AscenderVBA\rank_targets.xlsm")
+  Worksheets("raw_data").Range("A:B").PasteSpecial
+
+  wb1.Close
+  
+End Sub
