@@ -1,0 +1,2 @@
+Set x = Workbooks.Open("C:\Users\daniel\Desktop\bquant.cv")
+Set y = Workbooks.Open("C:\Users\daniel\Desktop\target.xlsm")
